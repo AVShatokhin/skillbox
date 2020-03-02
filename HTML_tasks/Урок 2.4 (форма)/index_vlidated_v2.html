@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Домашнее задание, урок №2.4 (форма)</title>
+		<meta charset="utf-8">
+	
+		<style>
+	
+		</style>
+	</head>
+	<body>
+		<main>
+			<form>
+				<h2>Отправка заявки на конференцию</h2>
+				<h3>Основные данные</h3>
+				
+				<p>*&nbsp;<b>Фамилия, имя, отчество:</b></p>
+					<input name="fio" required="required" size="40" type="text">
+					
+				<p><b>Дата рождения:</b></p>
+					<input name="date" type="date">
+				
+				<p><b>Пол:</b></p>
+					<input name="sex" id="sex_m" type="radio" value="male"	>&nbsp;<label for="sex_m">мужской</label>
+					<input name="sex" id="sex_f" type="radio" value="female">&nbsp;<label for="sex_f">женский</label>
+				
+				<h3>Данные для создания личного кабинета</h3>
+				
+				<p>*&nbsp;<b>Адрес электронной почты:</b></p>
+					<input name="email" required="required" size="40" type="email">
+				
+				<p>*&nbsp;<b>Пароль для создания личного кабинета:</b></p>
+					<input name="password" required="required" size="40" type="password">
+				
+				<p>*&nbsp;<b>Подтверждение пароля:</b></p>
+					<input name="rep_password" required="required" size="40" type="password">
+				
+				<h3>Материалы для конференции</h3>
+				
+				<p>*&nbsp;<b>Тема доклада:</b></p>
+					<input name="topic" required="required" size="40" type="text">
+				
+				<p>*&nbsp;<b>Тезисы доклада (не более 1000 символов):</b></p>
+					<textarea name="summary" required="required" cols="40" rows="10" maxlength="1000"></textarea>
+
+				<p>*&nbsp;<b>Файл презентации:</b></p>
+					<input name="filename" required="required" type="file">
+
+				<h3>Дополнительные опции</h3>
+
+				<input name="options" type="checkbox" id="hotel" value="hotel">&nbsp;<label for="hotel">Проживание в отеле</label><br>
+				<input name="options" type="checkbox" id="breakfast" checked="checked" value="breakfast">&nbsp;<label for="breakfast">Завтрак</label><br>
+				<input name="options" type="checkbox" id="lunch" value="lunch">&nbsp;<label for="lunch">Обед</label><br>
+				<input name="options" type="checkbox" id="dinner" value="dinner">&nbsp;<label for="dinner">Ужин</label><br>	
+				
+				<hr>
+
+				<input name="submit" type="submit">
+
+				<hr>
+
+				<small>*&nbsp;Поля, отмеченные звездочкой, являются обязательными для заполнения</small>
+			</form>
+		</main>
+	</body>
+</html>

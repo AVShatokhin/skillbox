@@ -1,0 +1,73 @@
+/* мои шаги адаптивности
+	<= 1000 - когда больше 1000 вообще никаких изменений в стилях нет
+	<= 767  -
+	<= 512  
+	<= 380  
+*/
+
+@media (max-width: 1000px) {
+	.fixed-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.fixed-container ul li a {
+		font-size: 12px;
+		margin-right: 5px;
+	}
+
+	.fixed-container ul li a::after {
+		content: '/';
+		position: absolute;
+		color: #91919f;
+		display: block;
+		right: -15px;
+		font-size: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+
+@media (max-width: 767px) {
+	.header-nav {
+		display: none;
+	}
+
+	.header-big-case {
+		display: none;		
+	}
+
+	.header-small-case-top {
+		display: flex;		
+	}
+
+	.header-small-case-bottom {
+		display: flex;		
+	}
+
+
+	.logo img:nth-child(1) {
+		margin-left: 0px;
+	}	
+
+}
+
+
+@media (max-width: 512px) {
+	.datetime-black-bar {
+		display: none;
+	}
+}
+
+
+@media (max-width: 380px) {
+	.black-bar {
+		padding-top: 17px;
+		padding-bottom: 18px;
+	}
+
+	.black-bar .fixed-container h1 {
+		font-size: 13px;
+	}
+}
